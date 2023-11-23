@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
     printf("Ingrese el valor para columnas: ");
     scanf("%d", &m);
     srand(time(NULL));
-    // Agregamos la matriz con los numeros aliatorios 
+    // Agregamos la matriz con los numeros aliatorios
     int matrix1[n][m];
     printf("Matriz Original: \n");
     for (int i = 0; i < n; i++)
@@ -23,12 +23,24 @@ int main(int argc, char const *argv[])
         printf("\n");
         for (int j = 0; j < m; j++)
         {
-            matrix1[i][j] = rand() % 101;;
+            matrix1[i][j] = rand() % 101;
+            ;
             printf("%d\t", matrix1[i][j]);
-            // Colocamos la segunada matriz que sera la tanspuesta 
+            // Colocamos la segunada matriz que sera la tanspuesta
             // Imprimimos la matriz resultante
         }
     }
+    int matrix2[m][n];
+    printf("\n");
+    printf("\nMatriz \n \n");
 
+    {
+        for (int j = 0; j < n; j++)
+        {
+            matrix2[i][j] = matrix1[j][i];
+            printf("%d\t", matrix2[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }
