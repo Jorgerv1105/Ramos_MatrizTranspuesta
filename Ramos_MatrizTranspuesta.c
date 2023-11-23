@@ -29,17 +29,6 @@ int main(int argc, char const *argv[])
             // Imprimimos la matriz resultante
         }
     }
-    int matrix2[m][n];
-    printf("\n");
-    printf("\nMatriz \n \n");
-    for (int i = 0; i < m; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            matrix2[i][j] = matrix1[j][i];
-            printf("%d\t", matrix2[i][j]);
-        }
-        printf("\n");
-    }
+
     return 0;
 }
