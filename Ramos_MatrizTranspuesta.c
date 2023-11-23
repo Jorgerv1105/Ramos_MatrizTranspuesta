@@ -7,8 +7,7 @@
 #include <time.h>
 int main(int argc, char const *argv[])
 {
-    // Función para generar números aleatorios entre 0 y 100
-    // ingreso y reconocimiento de variables
+    // ingreso y reconocimiento de variables y generacion del codigo 
     int n, m;
     // Escaneamos la dimension de la matriz que ingrese el usuario
     printf("Ingrese el valor para filas: ");
@@ -16,7 +15,7 @@ int main(int argc, char const *argv[])
     printf("Ingrese el valor para columnas: ");
     scanf("%d", &m);
     srand(time(NULL));
-    // Agregamos la matriz con los casos de las fials y las columnas
+    // Agregamos la matriz con los numeros aliatorios 
     int matrix1[n][m];
     printf("Matriz Original: \n");
     for (int i = 0; i < n; i++)
@@ -26,7 +25,7 @@ int main(int argc, char const *argv[])
         {
             matrix1[i][j] = rand() % 101;;
             printf("%d\t", matrix1[i][j]);
-            // Colocamos la condicion para que la diagonal principal sea de 1
+            // Colocamos la segunada matriz que sera la tanspuesta 
             // Imprimimos la matriz resultante
         }
     }
