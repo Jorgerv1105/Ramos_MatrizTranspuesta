@@ -33,7 +33,7 @@ int main(int argc, char const *argv[])
     int matrix2[m][n];
     printf("\n");
     printf("\nMatriz \n \n");
-
+    for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
